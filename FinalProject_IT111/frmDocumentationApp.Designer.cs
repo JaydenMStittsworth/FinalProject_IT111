@@ -1,0 +1,70 @@
+﻿namespace FinalProject_IT111
+{
+    partial class frmDocumentationApp
+    {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            lbEntries = new ListBox();
+            btnNewEntry = new Button();
+            SuspendLayout();
+            // 
+            // lbEntries
+            // 
+            lbEntries.FormattingEnabled = true;
+            lbEntries.Location = new Point(12, 54);
+            lbEntries.Name = "lbEntries";
+            lbEntries.Size = new Size(364, 379);
+            lbEntries.TabIndex = 0;
+            // 
+            // btnNewEntry
+            // 
+            btnNewEntry.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnNewEntry.Location = new Point(12, 12);
+            btnNewEntry.Name = "btnNewEntry";
+            btnNewEntry.Size = new Size(109, 36);
+            btnNewEntry.TabIndex = 1;
+            btnNewEntry.Text = "New Entry";
+            btnNewEntry.UseVisualStyleBackColor = true;
+            // 
+            // frmDocumentationApp
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(388, 450);
+            Controls.Add(btnNewEntry);
+            Controls.Add(lbEntries);
+            Name = "frmDocumentationApp";
+            Text = "Documentation App";
+            ResumeLayout(false);
+        }
+
+        #endregion
+
+        private ListBox lbEntries;
+        private Button btnNewEntry;
+    }
+}
