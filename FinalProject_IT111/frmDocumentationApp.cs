@@ -14,9 +14,9 @@ namespace FinalProject_IT111
 
         private void btnNewEntry_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Yay it worked");
-
             // code to open up a new entry form
+            var newAddEntry = new frmAddEntry();
+            newAddEntry.ShowDialog();
         }
     }
 }
