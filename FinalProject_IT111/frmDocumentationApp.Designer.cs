@@ -43,7 +43,7 @@
             // btnNewEntry
             // 
             btnNewEntry.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnNewEntry.Location = new Point(12, 12);
+            btnNewEntry.Location = new Point(267, 12);
             btnNewEntry.Name = "btnNewEntry";
             btnNewEntry.Size = new Size(109, 36);
             btnNewEntry.TabIndex = 1;
