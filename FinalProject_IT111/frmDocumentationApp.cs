@@ -11,5 +11,12 @@ namespace FinalProject_IT111
             InitializeComponent();
             Records = new List<Record>();
         }
+
+        private void btnNewEntry_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Yay it worked");
+
+            // code to open up a new entry form
+        }
     }
 }

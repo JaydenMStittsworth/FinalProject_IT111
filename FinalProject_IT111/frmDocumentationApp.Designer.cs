@@ -49,6 +49,7 @@
             btnNewEntry.TabIndex = 1;
             btnNewEntry.Text = "New Entry";
             btnNewEntry.UseVisualStyleBackColor = true;
+            btnNewEntry.Click += this.btnNewEntry_Click;
             // 
             // frmDocumentationApp
             // 
