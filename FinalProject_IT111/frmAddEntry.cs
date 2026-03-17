@@ -33,6 +33,7 @@ namespace FinalProject_IT111
 
         private void frmAddEntry_Load(object sender, EventArgs e)
         {
+            // uses data binding to connect the two forms
             txtTitle.DataBindings.Clear();
             txtEntry.DataBindings.Clear();
             txtTitle.DataBindings.Add("Text", _record, "Title");
@@ -56,6 +57,7 @@ namespace FinalProject_IT111
             }
             else
             {
+                // enters new list information and closes the form
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
@@ -67,6 +69,10 @@ namespace FinalProject_IT111
             txtEntry.Text = "";
         }
 
-
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            // closes the form
+            this.Close();
+        }
     }
 }
