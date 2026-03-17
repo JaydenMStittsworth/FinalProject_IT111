@@ -70,9 +70,9 @@
             // 
             // fpEntries
             // 
-            fpEntries.Location = new Point(6, 54);
+            fpEntries.Location = new Point(6, 63);
             fpEntries.Name = "fpEntries";
-            fpEntries.Size = new Size(364, 377);
+            fpEntries.Size = new Size(364, 368);
             fpEntries.TabIndex = 3;
             // 
             // frmDocumentationApp

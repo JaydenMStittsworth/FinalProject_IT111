@@ -19,18 +19,18 @@ namespace FinalProject_IT111
             };
         }
 
-        private void lbEntries_Click(object sender, EventArgs e)
-        {
-            // code for opening the registered entry form upon click
-            #pragma warning disable CS8600
-            Record selectedObj = (Record)lbEntries.SelectedItem;
-            #pragma warning restore CS8600
+        //private void lbEntries_Click(object sender, EventArgs e)
+        //{
+        //    // code for opening the registered entry form upon click
+        //    #pragma warning disable CS8600
+        //    Record selectedObj = (Record)lbEntries.SelectedItem;
+        //    #pragma warning restore CS8600
 
-            if (selectedObj != null)
-            {
-                MessageBox.Show($"{selectedObj.Entry}", $"{selectedObj.Title}");
-            }
-        }
+        //    if (selectedObj != null)
+        //    {
+        //        MessageBox.Show($"{selectedObj.Entry}", $"{selectedObj.Title}");
+        //    }
+        //}
 
         private void btnNewEntry_Click(object sender, EventArgs e)
         {
@@ -48,7 +48,7 @@ namespace FinalProject_IT111
         private void frmDocumentationApp_Load(object sender, EventArgs e)
         {
             // connects the entries list box to the records list
-            lbEntries.DataSource = Records;
+            // lbEntries.DataSource = Records;
 
             // adds a new entry for explaining how the application works
             Records.Add(new Record
