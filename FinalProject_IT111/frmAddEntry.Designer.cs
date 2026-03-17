@@ -76,6 +76,7 @@
             btnAddNewEntry.TabIndex = 4;
             btnAddNewEntry.Text = "Add New Entry";
             btnAddNewEntry.UseVisualStyleBackColor = true;
+            btnAddNewEntry.Click += btnAddNewEntry_Click;
             // 
             // btnClear
             // 
@@ -85,6 +86,7 @@
             btnClear.TabIndex = 5;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = true;
+            btnClear.Click += btnClear_Click;
             // 
             // frmAddEntry
             // 
