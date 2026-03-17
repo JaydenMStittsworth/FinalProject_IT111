@@ -39,7 +39,7 @@
             // lblTitle
             // 
             lblTitle.AutoSize = true;
-            lblTitle.Location = new Point(50, 45);
+            lblTitle.Location = new Point(12, 20);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(32, 15);
             lblTitle.TabIndex = 0;
@@ -48,7 +48,7 @@
             // lblEntry
             // 
             lblEntry.AutoSize = true;
-            lblEntry.Location = new Point(50, 75);
+            lblEntry.Location = new Point(12, 50);
             lblEntry.Name = "lblEntry";
             lblEntry.Size = new Size(37, 15);
             lblEntry.TabIndex = 1;
@@ -56,21 +56,21 @@
             // 
             // txtTitle
             // 
-            txtTitle.Location = new Point(101, 37);
+            txtTitle.Location = new Point(63, 12);
             txtTitle.Name = "txtTitle";
             txtTitle.Size = new Size(382, 23);
             txtTitle.TabIndex = 2;
             // 
             // txtEntry
             // 
-            txtEntry.Location = new Point(101, 72);
+            txtEntry.Location = new Point(63, 47);
             txtEntry.Name = "txtEntry";
             txtEntry.Size = new Size(382, 23);
             txtEntry.TabIndex = 3;
             // 
             // btnAddNewEntry
             // 
-            btnAddNewEntry.Location = new Point(388, 119);
+            btnAddNewEntry.Location = new Point(350, 94);
             btnAddNewEntry.Name = "btnAddNewEntry";
             btnAddNewEntry.Size = new Size(95, 23);
             btnAddNewEntry.TabIndex = 4;
@@ -80,7 +80,7 @@
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(287, 119);
+            btnClear.Location = new Point(249, 94);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(95, 23);
             btnClear.TabIndex = 5;
@@ -92,7 +92,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(456, 129);
             Controls.Add(btnClear);
             Controls.Add(btnAddNewEntry);
             Controls.Add(txtEntry);

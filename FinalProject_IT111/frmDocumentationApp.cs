@@ -17,6 +17,18 @@ namespace FinalProject_IT111
             };
         }
 
+        private void lbEntries_Click(object sender, EventArgs e)
+        {
+            #pragma warning disable CS8600
+            Record selectedObj = (Record)lbEntries.SelectedItem;
+            #pragma warning restore CS8600
+
+            if (selectedObj != null)
+            {
+                MessageBox.Show($"TASK COMPLETE");
+            }
+        }
+
         private void btnNewEntry_Click(object sender, EventArgs e)
         {
             // code to open up a new entry form
