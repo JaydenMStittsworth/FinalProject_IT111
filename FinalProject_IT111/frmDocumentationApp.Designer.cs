@@ -28,22 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lbEntries = new ListBox();
             btnNewEntry = new Button();
             lblTitle = new Label();
             gbDocumentationApp = new GroupBox();
+            fpEntries = new FlowLayoutPanel();
             gbDocumentationApp.SuspendLayout();
             SuspendLayout();
-            // 
-            // lbEntries
-            // 
-            lbEntries.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbEntries.FormattingEnabled = true;
-            lbEntries.Location = new Point(6, 63);
-            lbEntries.Name = "lbEntries";
-            lbEntries.Size = new Size(364, 361);
-            lbEntries.TabIndex = 0;
-            lbEntries.Click += lbEntries_Click;
             // 
             // btnNewEntry
             // 
@@ -69,7 +59,7 @@
             // gbDocumentationApp
             // 
             gbDocumentationApp.Anchor = AnchorStyles.Top;
-            gbDocumentationApp.Controls.Add(lbEntries);
+            gbDocumentationApp.Controls.Add(fpEntries);
             gbDocumentationApp.Controls.Add(lblTitle);
             gbDocumentationApp.Controls.Add(btnNewEntry);
             gbDocumentationApp.Location = new Point(16, 12);
@@ -77,6 +67,13 @@
             gbDocumentationApp.Size = new Size(376, 437);
             gbDocumentationApp.TabIndex = 3;
             gbDocumentationApp.TabStop = false;
+            // 
+            // fpEntries
+            // 
+            fpEntries.Location = new Point(6, 54);
+            fpEntries.Name = "fpEntries";
+            fpEntries.Size = new Size(364, 377);
+            fpEntries.TabIndex = 3;
             // 
             // frmDocumentationApp
             // 
@@ -95,10 +92,9 @@
         }
 
         #endregion
-
-        private ListBox lbEntries;
         private Button btnNewEntry;
         private Label lblTitle;
         private GroupBox gbDocumentationApp;
+        private FlowLayoutPanel fpEntries;
     }
 }
