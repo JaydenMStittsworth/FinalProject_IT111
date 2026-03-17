@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,9 +13,30 @@ namespace FinalProject_IT111
 {
     public partial class frmAddEntry : Form
     {
+        private Record _record;
+
         public frmAddEntry()
         {
             InitializeComponent();
+            _record = new Record();
+        }
+
+        public void LoadRecord(Record record)
+        {
+            _record = record;
+        }
+
+        public Record GetRecord()
+        {
+            return _record;
+        }
+
+        private void frmAddEntry_Load(object sender, EventArgs e)
+        {
+            txtTitle.DataBindings.Clear();
+            txtEntry.DataBindings.Clear();
+            txtTitle.DataBindings.Add("Text", _record, "Title");
+            txtEntry.DataBindings.Add("Text", _record, "Entry");
         }
 
         private void btnAddNewEntry_Click(object sender, EventArgs e)
@@ -32,6 +54,11 @@ namespace FinalProject_IT111
             {
                 MessageBox.Show("Enter other");
             }
+            else
+            {
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -39,5 +66,7 @@ namespace FinalProject_IT111
             txtTitle.Text = "";
             txtEntry.Text = "";
         }
+
+
     }
 }

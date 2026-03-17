@@ -101,6 +101,7 @@
             Controls.Add(lblTitle);
             Name = "frmAddEntry";
             Text = "frmAddEntry";
+            Load += frmAddEntry_Load;
             ResumeLayout(false);
             PerformLayout();
         }

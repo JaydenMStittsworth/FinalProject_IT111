@@ -49,7 +49,7 @@
             btnNewEntry.TabIndex = 1;
             btnNewEntry.Text = "New Entry";
             btnNewEntry.UseVisualStyleBackColor = true;
-            btnNewEntry.Click += this.btnNewEntry_Click;
+            btnNewEntry.Click += btnNewEntry_Click;
             // 
             // frmDocumentationApp
             // 
@@ -60,6 +60,7 @@
             Controls.Add(lbEntries);
             Name = "frmDocumentationApp";
             Text = "Documentation App";
+            Load += frmDocumentationApp_Load;
             ResumeLayout(false);
         }
 

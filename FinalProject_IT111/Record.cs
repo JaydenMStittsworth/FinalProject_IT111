@@ -18,6 +18,12 @@ namespace FinalProject_IT111
             Entry = entry;
         }
 
+        public Record()
+        {
+            Title = "";
+            Entry = "";
+        }
+
         public override string ToString()
         {
             return $"{Title} - {Entry}";
