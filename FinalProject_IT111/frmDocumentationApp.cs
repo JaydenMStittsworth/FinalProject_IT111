@@ -25,7 +25,7 @@ namespace FinalProject_IT111
 
             if (selectedObj != null)
             {
-                MessageBox.Show($"TASK COMPLETE");
+                MessageBox.Show($"{selectedObj.Entry}");
             }
         }
 

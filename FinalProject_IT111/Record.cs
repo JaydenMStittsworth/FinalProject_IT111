@@ -26,7 +26,7 @@ namespace FinalProject_IT111
 
         public override string ToString()
         {
-            return $"{Title} - {Entry}";
+            return $"{Title}";
         }
     }
 }

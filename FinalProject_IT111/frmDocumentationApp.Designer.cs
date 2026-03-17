@@ -41,6 +41,7 @@
             lbEntries.Name = "lbEntries";
             lbEntries.Size = new Size(364, 361);
             lbEntries.TabIndex = 0;
+            lbEntries.Click += lbEntries_Click;
             // 
             // btnNewEntry
             // 
