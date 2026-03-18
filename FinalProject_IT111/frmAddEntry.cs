@@ -43,17 +43,25 @@ namespace FinalProject_IT111
         private void btnAddNewEntry_Click(object sender, EventArgs e)
         {
             // error handling to avoid blank spaces
-            if (txtTitle.Text == "" && txtEntry.Text == "")
+            // refocus onto the proper text box
+            if (Validation.ContainsValue(txtTitle.Text) == false &&
+                Validation.ContainsValue(txtEntry.Text) == false)
             {
-                MessageBox.Show("Enter both");
+                MessageBox.Show("Please enter a valid title and a valid entry " +
+                    "into both of the text boxes.", "No Text Found");
+                txtTitle.Focus();
             }
-            else if (txtTitle.Text == "")
+            else if (Validation.ContainsValue(txtTitle.Text) == false)
             {
-                MessageBox.Show("Enter one");
+                MessageBox.Show("Please enter a valid title into the upper text box.",
+                    "No Title Found");
+                txtTitle.Focus();
             }
-            else if (txtEntry.Text == "")
+            else if (Validation.ContainsValue(txtEntry.Text) == false)
             {
-                MessageBox.Show("Enter other");
+                MessageBox.Show("Please enter a valid entry into the lower text box.",
+                    "No Entry Found");
+                txtEntry.Focus();
             }
             else
             {
