@@ -50,10 +50,13 @@ namespace FinalProject_IT111
             Records.Add(new Record
             {
                 Title = "Read Me",
-                Entry = "This application keeps track of different " +
-                "entries. Click the New Entry button to add " +
-                "new entries to the form. Click on the entries in the " +
-                "list box to view their contents."
+                Entry = "This application is able to record entries put in " +
+                "by users. The 'New Entry' button on the top of the form " +
+                "will create a new entry. The 'View Contents' button on " +
+                "the right of a control allows users to view the contents " +
+                "of an entry. The 'Delete Entry' button under the 'View " +
+                "Contents' button will prompt users on whether or not they " +
+                "want to delete the entry."
             });
 
             RefreshEntries();

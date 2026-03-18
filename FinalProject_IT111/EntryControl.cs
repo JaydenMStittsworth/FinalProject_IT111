@@ -29,16 +29,26 @@ namespace FinalProject_IT111
             MessageBox.Show($"{RecordDetails.Entry}", $"{RecordDetails.Title}");
         }
 
-        // delete the entry from the form
+        // when delete button is pressed, ask if user wants to delete entry
+        // if yes, delete entry from the form
+        // if no, close the dialog box
         private void btnDeleteEntry_Click(object sender, EventArgs e)
         {
-            var frm = this.Parent?.Parent?.Parent as frmDocumentationApp;
+            var deleteConfirmation = MessageBox.Show("Are you sure you want to " +
+                $"delete this entry? ({lblEntryTitle.Text})", "Delete Entry?",
+                MessageBoxButtons.YesNo);
 
-            if (frm != null)
+            if (deleteConfirmation == DialogResult.Yes)
             {
-                MessageBox.Show($"RECORD DELETED - {lblEntryTitle.Text}");
-                frm.Records.Remove(RecordDetails);
-                frm.RefreshEntries();
+                var frm = this.Parent?.Parent?.Parent as frmDocumentationApp;
+
+                if (frm != null)
+                {
+                    MessageBox.Show($"{lblEntryTitle.Text} has been deleted.", 
+                        "Entry Deleted");
+                    frm.Records.Remove(RecordDetails);
+                    frm.RefreshEntries();
+                }
             }
         }
     }
