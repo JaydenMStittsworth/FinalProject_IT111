@@ -54,7 +54,7 @@ namespace FinalProject_IT111
 
             foreach (Record record in Records)
             {
-                fpEntries.Controls.Add(new EntryControl());
+                fpEntries.Controls.Add(new EntryControl(record));
             }
         }
 
@@ -67,7 +67,7 @@ namespace FinalProject_IT111
             // add new entry to list
             Records.Add(new Record
             {
-                Title = "Click Me",
+                Title = "Read Me",
                 Entry = "This application keeps track of different " +
                 "entries. Click the New Entry button to add " +
                 "new entries to the form. Click on the entries in the " +

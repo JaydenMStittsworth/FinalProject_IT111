@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblEntryValue = new Label();
+            lblEntryTitle = new Label();
             btnViewContents = new Button();
             btnDeleteEntry = new Button();
             SuspendLayout();
             // 
-            // lblEntryValue
+            // lblEntryTitle
             // 
-            lblEntryValue.AutoSize = true;
-            lblEntryValue.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblEntryValue.Location = new Point(13, 10);
-            lblEntryValue.Name = "lblEntryValue";
-            lblEntryValue.Size = new Size(140, 25);
-            lblEntryValue.TabIndex = 0;
-            lblEntryValue.Text = "Title Goes Here";
+            lblEntryTitle.AutoSize = true;
+            lblEntryTitle.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblEntryTitle.Location = new Point(13, 10);
+            lblEntryTitle.Name = "lblEntryTitle";
+            lblEntryTitle.Size = new Size(140, 25);
+            lblEntryTitle.TabIndex = 0;
+            lblEntryTitle.Text = "Title Goes Here";
             // 
             // btnViewContents
             // 
@@ -51,6 +51,7 @@
             btnViewContents.TabIndex = 1;
             btnViewContents.Text = "View Contents";
             btnViewContents.UseVisualStyleBackColor = true;
+            btnViewContents.Click += btnViewContents_Click;
             // 
             // btnDeleteEntry
             // 
@@ -67,7 +68,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(btnDeleteEntry);
             Controls.Add(btnViewContents);
-            Controls.Add(lblEntryValue);
+            Controls.Add(lblEntryTitle);
             Name = "EntryControl";
             Size = new Size(364, 84);
             ResumeLayout(false);
@@ -76,7 +77,7 @@
 
         #endregion
 
-        private Label lblEntryValue;
+        private Label lblEntryTitle;
         private Button btnViewContents;
         private Button btnDeleteEntry;
     }
