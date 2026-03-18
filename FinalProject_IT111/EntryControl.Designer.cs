@@ -37,7 +37,7 @@
             // 
             lblEntryTitle.AutoSize = true;
             lblEntryTitle.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblEntryTitle.Location = new Point(13, 10);
+            lblEntryTitle.Location = new Point(13, 14);
             lblEntryTitle.Name = "lblEntryTitle";
             lblEntryTitle.Size = new Size(140, 25);
             lblEntryTitle.TabIndex = 0;
