@@ -45,7 +45,7 @@
             // 
             // btnViewContents
             // 
-            btnViewContents.Location = new Point(245, 14);
+            btnViewContents.Location = new Point(237, 14);
             btnViewContents.Name = "btnViewContents";
             btnViewContents.Size = new Size(102, 23);
             btnViewContents.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             // btnDeleteEntry
             // 
-            btnDeleteEntry.Location = new Point(245, 48);
+            btnDeleteEntry.Location = new Point(237, 48);
             btnDeleteEntry.Name = "btnDeleteEntry";
             btnDeleteEntry.Size = new Size(102, 23);
             btnDeleteEntry.TabIndex = 2;
@@ -71,7 +71,7 @@
             Controls.Add(btnViewContents);
             Controls.Add(lblEntryTitle);
             Name = "EntryControl";
-            Size = new Size(364, 84);
+            Size = new Size(339, 84);
             ResumeLayout(false);
             PerformLayout();
         }

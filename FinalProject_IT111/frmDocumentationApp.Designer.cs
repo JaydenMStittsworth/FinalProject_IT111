@@ -70,12 +70,14 @@
             // 
             // fpEntries
             // 
-            fpEntries.AutoSize = true;
+            fpEntries.AutoScroll = true;
+            fpEntries.Dock = DockStyle.Bottom;
             fpEntries.FlowDirection = FlowDirection.TopDown;
-            fpEntries.Location = new Point(6, 63);
+            fpEntries.Location = new Point(3, 63);
             fpEntries.Name = "fpEntries";
-            fpEntries.Size = new Size(364, 368);
+            fpEntries.Size = new Size(370, 371);
             fpEntries.TabIndex = 3;
+            fpEntries.WrapContents = false;
             // 
             // frmDocumentationApp
             // 
