@@ -133,7 +133,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "frmAddEntry";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "frmAddEntry";
+            Text = "Add Entry";
             Load += frmAddEntry_Load;
             gbAddEntry.ResumeLayout(false);
             gbAddEntry.PerformLayout();

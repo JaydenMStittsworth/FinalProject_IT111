@@ -61,6 +61,7 @@
             btnDeleteEntry.TabIndex = 2;
             btnDeleteEntry.Text = "Delete Entry";
             btnDeleteEntry.UseVisualStyleBackColor = true;
+            btnDeleteEntry.Click += btnDeleteEntry_Click;
             // 
             // EntryControl
             // 
