@@ -41,16 +41,30 @@ namespace FinalProject_IT111
             if (newAddEntryForm.ShowDialog() == DialogResult.OK)
             {
                 Records.Add(newAddEntryForm.GetRecord());
+
+                RefreshEntries();
             }
 
+        }
+
+        // code for refreshing the flow layout panel
+        public void RefreshEntries()
+        {
+            fpEntries.Controls.Clear();
+
+            foreach (Record record in Records)
+            {
+                fpEntries.Controls.Add(new EntryControl());
+            }
         }
 
         private void frmDocumentationApp_Load(object sender, EventArgs e)
         {
             // connects the entries list box to the records list
-            // lbEntries.DataSource = Records;
+            // fpEntries.DataSource = Records;
 
             // adds a new entry for explaining how the application works
+            // add new entry to list
             Records.Add(new Record
             {
                 Title = "Click Me",
@@ -59,6 +73,8 @@ namespace FinalProject_IT111
                 "new entries to the form. Click on the entries in the " +
                 "list box to view their contents."
             });
+
+            RefreshEntries();
         }
     }
 }

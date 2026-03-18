@@ -70,6 +70,8 @@
             // 
             // fpEntries
             // 
+            fpEntries.AutoSize = true;
+            fpEntries.FlowDirection = FlowDirection.TopDown;
             fpEntries.Location = new Point(6, 63);
             fpEntries.Name = "fpEntries";
             fpEntries.Size = new Size(364, 368);
